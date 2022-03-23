@@ -44,11 +44,12 @@ main {
     border-radius: 5px;
     background-color: var(--color-main);
 }
+/* =============== NAVIGATION BAR =============== */
 
 .navigation-bar {
     height: 3rem;
     display: flex;
-    background: var(--color-primary);
+    background-color: var(--color-primary);
     position: fixed;
     top: 0;
     border-bottom-left-radius: 10px;
@@ -59,8 +60,8 @@ main {
     transition: 500ms ease;
     font: 600 30px 'Roboto', sans-serif;
     color: var(--color-table);
-    border-top-left-radius: 0.7rem;
-    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
     margin-left: 1rem;
     margin-top: 0.5rem;
     padding: 0 0.5rem;
@@ -69,26 +70,55 @@ main {
 .navigation-bar a:hover{
     transition: 500ms ease;
     background: var(--color-table);
-    border-top-left-radius: 0.7rem;
-    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
     color: var(--color-primary);
 
 }
 /* =================== CARDS ======================= */
-.card{
-    display: block;
+
+.cards{
+    display: grid;
     box-sizing: border-box;
-    max-width: 500px;
-    max-height: 400px;
+    row-gap: 2rem;
+    border-radius: 1rem;
+}
+.row{
+    display: flex;
+    column-gap: 2rem;
+    border-radius: inherit;
+}
+.card{
+    height: 300px;
+    width: 300px;
+    background: var(--color-table);
+    border-radius:inherit;
+    transition: 400ms ease;
+}
+.card a{
+    height: 300px;
+    width: 300px;
+    text-align: center;
 }
 .card img{
-    height: 400px;
-    transition: 300ms ease;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
 }
-.card img:hover{
-    height: 800px;
-
+.card:hover{
+    box-shadow: 0 0 20px 8px var(--color-box-shadow);
+    transition: 400ms ease;
+    outline: 6px solid var(--color-primary);
 }
+/*.card p{*/
+/*    font: 600 30px 'Roboto', sans-serif;*/
+/*    color: var(--color-primary);*/
+/*    display: none;*/
+/*}*/
+/*.card:hover p{*/
+/*    display: block;*/
+/*}*/
 
 /* ===================== INFO ==================== */
 
@@ -126,14 +156,14 @@ hr {
     max-width: 220px;
     max-height: 220px;
     border-radius: 10px;
-    box-shadow: 4px 4px 14px #343434;
+    box-shadow: 4px 4px 14px var(--color-box-shadow);
 }
 
 .avatar {
     max-width: 360px;
     max-height: 640px;
     border-radius: 10px;
-    box-shadow: 4px 4px 14px #343434;
+    box-shadow: 4px 4px 14px var(--color-box-shadow);
 }
 .for-avatar {
     background: var(--color-main);
