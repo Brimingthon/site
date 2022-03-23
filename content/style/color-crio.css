@@ -1,8 +1,10 @@
 :root{
-    --color-primary: #192546;
-    --color-secondary: #c1e0f2;
-    --color-thirdary: #8dccee;
-    --color-fourthdary: #5f82a7;
-    --color-fifdary: #525291;
+    --color-primary: #000;
+    --color-body: #f0f0f0;
+    --color-main: #c1e0f2;
+    --color-table: #8dccee;
+    --color-table-dark: #5f82a7;
+    --color-border:#525291;
     --color-box-shadow: #343434;
+
 }
